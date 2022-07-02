@@ -8,16 +8,8 @@ library(lubridate) # Date manipulation
 library(readxl) # Read excel files
 library(openxlsx) # Write excel files
 library(fpp3) # Forecast package
-# library(countrycode) # Country code
 
 rm(list=ls())
-
-#### To-do list
-# 1. Make reconciled forecasts non-negative by taking adjustments in the country the negative occurred in -- done
-# 2. Fix prediction intervals that do not reconcile (for the reconciled models) by adjusting either
-#    total or subseries. -- done (by adjusting subseries to sum up to total as it is more important for us)
-# 3. Accuracy tests: H = 12 and calculated H until December -- done
-# 4. Test if making the training set shorter (around 200 observations) improves accuracy -- done
 
 # Put "yes" or "no" here to run the required functions in the script
 # Forecast would provide forecasts for all scenarios and exported to the forecast excel file
