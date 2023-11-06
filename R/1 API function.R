@@ -37,7 +37,7 @@ Query_db <- function(series_id, frequency = NULL, include_incomplete = FALSE, fo
   
   
   # Setting the authorization header. Change bearer token to your API given by MMA database website.
-  bearer_token <- "9|kfbjltsPbaApuvycKBG5R7NK2NHRPvfnob5WuFnF"
+  bearer_token <- api_key
   auth_headers <- c(Authorization = glue("Bearer {bearer_token}"))
   
   # Combining links with series IDs
